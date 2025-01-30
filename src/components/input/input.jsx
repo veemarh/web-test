@@ -24,7 +24,7 @@ export default function Input({title, required, children}) {
                         <div className={styles.badgeStroke}>{children}</div>
                     </div>
                     <DefaultButton image={plus}/>
-                    <DefaultButton image={search}/>
+                    <DefaultButton image={search} text="Поиск"/>
                 </div>
             </div>
             <div className={styles.fieldMessage}>

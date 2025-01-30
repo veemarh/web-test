@@ -1,7 +1,8 @@
 @import "../../assets/typography.module.css";
 
 .img {
-    padding: 3px
+    padding: 3px;
+    cursor: pointer;
 }
 
 .badge {

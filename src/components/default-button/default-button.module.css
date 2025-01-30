@@ -1,17 +1,25 @@
 .defaultButton {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4px;
     align-items: center;
-    padding: 6px;
-
-    width: 32px;
-    height: 32px;
 
     background: #FFFFFF;
     box-shadow: 0 0 0 1px #D5D8DD inset;
     border-radius: 4px;
 
     flex-grow: 0;
+}
+
+.withText {
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.withIcon {
+    padding: 6px;
 }
 
 .plusButton {
