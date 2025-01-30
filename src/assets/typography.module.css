@@ -1,0 +1,38 @@
+.text {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2E3238;
+}
+
+.commonText {
+    composes: text;
+    font-weight: 400;
+}
+
+.titleText {
+    composes: text;
+    font-weight: 600;
+}
+
+.titleStar {
+    composes: titleText;
+    color: #B21F00;
+}
+
+.overflowText {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.messageText {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: left;
+
+    color: #5C6470;
+
+    flex-grow: 1;
+}

@@ -1,0 +1,119 @@
+@import "../../assets/typography.module.css";
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+
+    order: 0;
+    flex-grow: 1;
+}
+
+.inputAndButtonAndLabel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    isolation: isolate;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.inputTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    max-width: 100%;
+
+    flex-grow: 0;
+    z-index: 1;
+    order: 0;
+}
+
+.inputAndButton {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4px;
+    max-width: 100%;
+
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 0;
+}
+
+.inputSettings {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 30px 4px 4px;
+    min-width: 0;
+    gap: 4px;
+    isolation: isolate;
+
+    background: #FCFCFD;
+    box-shadow: 0 0 0 1px #D5D8DD inset;
+    border-radius: 4px;
+
+    order: 0;
+    flex-grow: 1;
+}
+
+.badgeStroke {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 4px;
+
+    flex-grow: 1;
+    z-index: 1;
+
+    overflow: hidden;
+}
+
+.microButton {
+    width: 16px;
+    height: 16px;
+}
+
+.closeCircle {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: calc(50% - 16px / 2);
+    top: calc(50% - 16px / 2);
+}
+
+.vector {
+    pointer-events: none;
+}
+
+.rightIcon {
+    position: absolute;
+    padding: 2px 0;
+    right: 9px;
+    top: 7px;
+    width: 16px;
+    height: 20px;
+    z-index: 0;
+}
+
+.fieldMessage {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4px;
+
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}

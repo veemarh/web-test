@@ -1,0 +1,19 @@
+@import "../../assets/typography.module.css";
+
+.img {
+    padding: 3px
+}
+
+.badge {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px 8px;
+    width: fit-content;
+    min-width: 0;
+    gap: 8px;
+
+    background: #E5F4FF;
+    box-shadow: 0 0 0 1px inset #99D5FF;
+    border-radius: 4px;
+}
