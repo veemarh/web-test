@@ -3,6 +3,7 @@ import closeCircle from "/close-circle.svg";
 import plus from "/plus.svg"
 import search from "/search.svg"
 import DefaultButton from "../default-button/default-button.jsx";
+import RightIcon from "../right-icon/RightIcon.jsx";
 
 export default function Input({title, required, children}) {
     return (
@@ -14,13 +15,7 @@ export default function Input({title, required, children}) {
                 </div>
                 <div className={styles.inputAndButton}>
                     <div className={styles.inputSettings}>
-                        <div className={styles.rightIcon}>
-                            <button className={styles.microButton}>
-                                <div className={styles.closeCircle}>
-                                    <img className={styles.vector} src={closeCircle} alt="close circle"/>
-                                </div>
-                            </button>
-                        </div>
+                        <RightIcon src={closeCircle} alt="close circle"/>
                         <div className={styles.badgeStroke}>{children}</div>
                     </div>
                     <DefaultButton image={plus}/>

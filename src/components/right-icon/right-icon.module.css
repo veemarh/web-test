@@ -1,0 +1,21 @@
+.rightIcon {
+    position: absolute;
+    padding: 2px 0;
+    right: 9px;
+    top: 7px;
+    width: 16px;
+    height: 20px;
+    z-index: 0;
+}
+
+.microButton {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: calc(50% - 16px / 2);
+    top: calc(50% - 16px / 2);
+}
+
+.vector {
+    pointer-events: none;
+}

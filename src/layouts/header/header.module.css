@@ -1,0 +1,116 @@
+@import "../../assets/typography.css";
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+
+    background: #FFFFFF;
+    border-bottom: 1px solid #D5D8DD;
+}
+
+input {
+    outline: none;
+}
+
+label {
+    position: relative;
+}
+
+.searchAndAvatarAndSettings {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+
+    width: 577px;
+    max-width: 577px;
+    height: 32px;
+
+    flex-grow: 1;
+}
+
+.searchAndAvatar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 16px;
+
+    width: 497px;
+    height: 32px;
+}
+
+.inputSettings {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 30px 6px 8px;
+    gap: 4px;
+
+    width: 296px;
+    height: 32px;
+
+    background: #FCFCFD;
+    border: 1px solid #D5D8DD;
+    border-radius: 4px;
+}
+
+.avatarAndName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+
+    width: 185px;
+    height: 32px;
+}
+
+.avatar {
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+
+.personalImage {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.logo {
+    position: relative;
+
+    width: 174px;
+    height: 24px;
+
+    flex: none;
+}
+
+.logoCircle {
+    position: absolute;
+    left: 62.68%;
+    right: 22.98%;
+    top: 0;
+    bottom: 0;
+}
+
+.logoName {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 16.87%;
+    bottom: 15.05%;
+}
+
+::placeholder {
+    color: #ABB1BA;
+}

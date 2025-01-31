@@ -37,6 +37,16 @@
     color: var(--color-base);
 }
 
+.inputText {
+    font-family: var(--font-main);
+    font-style: var(--font-style-base);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+
+    color: var(--color-base);
+}
+
 .subheadingTitle {
     font-family: var(--font-title);
     line-height: var(--line-height-subtitle);
