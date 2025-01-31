@@ -1,0 +1,45 @@
+.titleText {
+    font-weight: var(--font-weight-bold);
+}
+
+.titleStar {
+    composes: titleText;
+    color: var(--color-accent);
+}
+
+.overflowText {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.messageText {
+    font-size: var(--font-size-little);
+    line-height: var(--line-height-little);
+
+    color: var(--color-secondary);
+}
+
+.mainTitle {
+    composes: titleText;
+    font-family: var(--font-title);
+    font-size: var(--font-size-title);
+    line-height: var(--line-height-title);
+}
+
+.buttonText {
+    font-family: var(--font-main);
+    font-style: var(--font-style-base);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+
+    color: var(--color-base);
+}
+
+.subheadingTitle {
+    font-family: var(--font-title);
+    line-height: var(--line-height-subtitle);
+    font-style: var(--font-style-base);
+    font-weight: var(--font-weight-regular);
+}

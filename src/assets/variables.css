@@ -1,0 +1,17 @@
+:root {
+    --font-main: 'Open Sans', sans-serif;
+    --font-title: 'Montserrat';
+    --font-style-base: normal;
+    --font-size-base: 14px;
+    --font-size-little: 12px;
+    --font-size-title: 24px;
+    --line-height-base: 20px;
+    --line-height-little: 16px;
+    --line-height-title: 32px;
+    --line-height-subtitle: 24px;
+    --color-base: #2E3238;
+    --color-accent: #B21F00;
+    --color-secondary: #5C6470;
+    --font-weight-regular: 400;
+    --font-weight-bold: 600;
+}

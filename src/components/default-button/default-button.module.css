@@ -1,3 +1,5 @@
+@import "../../assets/typography.css";
+
 .defaultButton {
     display: flex;
     flex-direction: row;
@@ -14,8 +16,6 @@
 
 .withText {
     padding: 6px 12px;
-    font-size: 14px;
-    line-height: 20px;
 }
 
 .withIcon {
@@ -34,17 +34,4 @@
 
 .vector {
     pointer-events: none;
-}
-
-.buttonText {
-    display: flex;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    align-items: center;
-    text-align: center;
-
-    color: #2E3238;
 }
