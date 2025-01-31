@@ -7,7 +7,7 @@ export default function DefaultButton({image, text}) {
                 <div className={styles.plusButton}>
                     <img className={styles.vector} src={image} alt={image.toString()}/>
                 </div>}
-            {text && <span>{text}</span>}
+            {text && <span className={styles.buttonText}>{text}</span>}
         </button>
     )
 }

@@ -1,0 +1,91 @@
+@import "../../assets/typography.module.css";
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 16px;
+
+    /*position: absolute;*/
+    /*left: 336px;*/
+    /*right: 20px;*/
+    /*top: 48px;*/
+}
+
+.paddingForm {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    gap: 24px;
+    max-width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.referenceInput,
+.split {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.subheadingAndPadding {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px;
+
+    align-self: stretch;
+}
+
+.subheadingSide {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+
+    flex: none;
+    flex-grow: 0;
+}
+
+.leftSide {
+    composes: subheadingSide;
+    align-items: center;
+    gap: 16px;
+
+    order: 0;
+}
+
+.rightSide {
+    composes: subheadingSide;
+    align-items: flex-start;
+    gap: 4px;
+
+    order: 1;
+}
+
+.subheadingTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #2E3238;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

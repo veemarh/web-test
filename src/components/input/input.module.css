@@ -7,7 +7,8 @@
     gap: 4px;
 
     order: 0;
-    flex-grow: 1;
+    flex: 1 1;
+    min-width: 0;
 }
 
 .inputAndButtonAndLabel {
