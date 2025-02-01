@@ -1,4 +1,8 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -7,6 +11,8 @@
 
     background: #FFFFFF;
     border-bottom: 1px solid #D5D8DD;
+
+    z-index: 2;
 }
 
 .searchAndAvatarAndSettings {
