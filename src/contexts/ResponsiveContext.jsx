@@ -5,7 +5,7 @@ export const ResponsiveContext = createContext(undefined);
 
 export const ResponsiveContextProvider = ({children}) => {
     const isDesktop = useMediaQuery({minWidth: 992});
-    const isMobile = useMediaQuery({maxWidth: 767});
+    const isMobile = useMediaQuery({maxWidth: 768});
     const isTablet = !isDesktop && !isMobile;
 
     return (
