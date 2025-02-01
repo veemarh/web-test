@@ -3,7 +3,7 @@ import DefaultButton from "../../components/default-button/DefaultButton.jsx";
 import Form from "./Form.jsx";
 import {useRef, useState} from "react";
 
-export default function Content() {
+export default function Content({navigatorVisible}) {
     const [shadow, setShadow] = useState(false);
     const containerRef = useRef(null);
 
@@ -16,8 +16,10 @@ export default function Content() {
     };
 
     return (
-        <section className={styles.content}>
-            <header className={`${styles.subheadingAndPadding} ${shadow ? styles.shadow : ""}`}>
+        <section
+            className={`${styles.content} ${navigatorVisible ? styles.withNavigatorVisible : styles.withNavigatorInvisible}`}>
+            <header
+                className={`${styles.subheadingAndPadding} ${shadow ? styles.shadow : ""} ${navigatorVisible ? styles.withNavigatorVisible : styles.withNavigatorInvisible}`}>
                 <div className={styles.leftSide}>
                     <h2 className={styles.subheadingTitle}>Подзадача</h2>
                     <DefaultButton text="Создать"/>

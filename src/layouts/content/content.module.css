@@ -3,12 +3,19 @@
 .content {
     position: fixed;
     right: 0;
-    left: 336px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0 0 16px;
+}
+
+.withNavigatorVisible {
+    left: 336px;
+}
+
+.withNavigatorInvisible {
+    left: 56px;
 }
 
 .paddingForm {
@@ -42,7 +49,6 @@
 
 .subheadingAndPadding {
     position: fixed;
-    left: 336px;
     right: 20px;
     top: 48px;
     display: flex;
