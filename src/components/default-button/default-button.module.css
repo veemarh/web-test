@@ -35,3 +35,8 @@
 .vector {
     pointer-events: none;
 }
+
+.defaultButton.primary {
+    background: #0078CF;
+    box-shadow: none;
+}

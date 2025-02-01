@@ -23,7 +23,7 @@ export default function Content() {
                     <DefaultButton text="Создать"/>
                 </div>
                 <div className={styles.rightSide}>
-                    <DefaultButton text="Сохранить"/>
+                    <DefaultButton text="Сохранить" primary={true}/>
                     <DefaultButton text="Сохранить и выйти"/>
                 </div>
             </header>

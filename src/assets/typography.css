@@ -33,8 +33,14 @@
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-base);
     line-height: var(--line-height-base);
+}
 
+.baseButtonText {
     color: var(--color-base);
+}
+
+.primaryButtonText {
+    color: #FFFFFF;
 }
 
 .inputText {
