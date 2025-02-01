@@ -38,13 +38,18 @@
 .referenceInput,
 .split {
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
     gap: 16px;
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
+}
+
+@media (max-width: 991px) {
+    .split {
+        flex-direction: column;
+    }
 }
 
 .subheadingAndPadding {
@@ -66,7 +71,7 @@
 }
 
 .subheadingAndPadding.shadow {
-    box-shadow:  0 4px 4px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04);
 }
 
 .subheadingSide {
