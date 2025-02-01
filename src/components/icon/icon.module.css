@@ -1,11 +1,21 @@
-.rightIcon {
+.icon {
     position: absolute;
     padding: 2px 0;
-    right: 9px;
+
     top: 7px;
     width: 16px;
     height: 20px;
-    z-index: 0;
+    z-index: 1;
+}
+
+.rightIcon {
+    composes: icon;
+    right: 9px;
+}
+
+.leftIcon {
+    composes: icon;
+    left: 9px;
 }
 
 .microButton {

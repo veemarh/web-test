@@ -1,5 +1,3 @@
-@import "../../assets/typography.css";
-
 .header {
     display: flex;
     flex-direction: row;
@@ -9,14 +7,6 @@
 
     background: #FFFFFF;
     border-bottom: 1px solid #D5D8DD;
-}
-
-input {
-    outline: none;
-}
-
-label {
-    position: relative;
 }
 
 .searchAndAvatarAndSettings {
@@ -43,23 +33,6 @@ label {
 
     width: 497px;
     height: 32px;
-}
-
-.inputSettings {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 6px 30px 6px 8px;
-    gap: 4px;
-
-    width: 296px;
-    height: 32px;
-
-    background: #FCFCFD;
-    border: 1px solid #D5D8DD;
-    border-radius: 4px;
 }
 
 .avatarAndName {
@@ -109,8 +82,4 @@ label {
     right: 0;
     top: 16.87%;
     bottom: 15.05%;
-}
-
-::placeholder {
-    color: #ABB1BA;
 }

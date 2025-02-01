@@ -1,5 +1,5 @@
 import styles from "./content.module.css";
-import DefaultButton from "../../components/default-button/default-button.jsx";
+import DefaultButton from "../../components/default-button/DefaultButton.jsx";
 import Form from "./Form.jsx";
 
 export default function Content() {

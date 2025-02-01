@@ -1,8 +1,8 @@
-import styles from "./right-icon.module.css";
+import styles from "./icon.module.css";
 
-export default function RightIcon({src, alt}) {
+export default function Icon({float = "right", src, alt}) {
     return (
-        <div className={styles.rightIcon}>
+        <div className={styles[`${float}Icon`]}>
             <button className={styles.microButton}>
                 <img className={styles.vector} src={src} alt={alt}/>
             </button>

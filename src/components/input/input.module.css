@@ -8,6 +8,7 @@
 
     order: 0;
     flex: 1 1;
+    align-self: stretch;
     min-width: 0;
 }
 
@@ -54,7 +55,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 4px 30px 4px 4px;
+    padding: 4px;
     min-width: 0;
     gap: 4px;
     isolation: isolate;
@@ -65,6 +66,10 @@
 
     order: 0;
     flex-grow: 1;
+}
+
+.withIcon {
+    padding-right: 30px;
 }
 
 .badgeStroke {
@@ -90,4 +95,15 @@
     order: 1;
     align-self: stretch;
     flex-grow: 0;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+input[type="date"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: text;
 }

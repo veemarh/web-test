@@ -1,0 +1,139 @@
+.navigatorContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+
+    width: 336px;
+    height: 100vh;
+    float: left;
+}
+
+.navigator {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 56px;
+
+    background: #FFFFFF;
+    border-right: 1px solid #D5D8DD;
+
+    align-self: stretch;
+}
+
+.navigatorTabs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 56px;
+}
+
+.navigatorTab {
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*align-items: flex-start;*/
+    padding: 16px;
+    /*gap: 10px;*/
+
+    width: 56px;
+    height: 56px;
+}
+
+.tabButton {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.tabImage {
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 16px;
+    gap: 8px;
+
+    align-self: stretch;
+}
+
+.inputContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon {
+    padding: 2px 0;
+
+    width: 16px;
+    height: 20px;
+}
+
+.iconInner {
+    width: 16px;
+    height: 16px;
+    justify-items: center;
+}
+
+.iconImg {
+    pointer-events: none;
+}
+
+.categoryName {
+    display: flex;
+    align-items: center;
+}
+
+.listAndFilter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 280px;
+
+    background: #FFFFFF;
+    border-right: 1px solid #D5D8DD;
+
+    align-self: stretch;
+}
+
+.listNavigator {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    align-self: stretch;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+
+    border-bottom: 1px solid #D5D8DD;
+}
+
+.searchAndIcon {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+
+    width: 248px;
+    height: 32px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

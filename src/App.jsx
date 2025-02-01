@@ -1,6 +1,6 @@
 import {BrowserRouter} from 'react-router-dom';
 import {ResponsiveContextProvider} from './contexts/ResponsiveContext.jsx';
-import PageScreen from "./pages/page-screen.jsx";
+import PageScreen from "./pages/PageScreen.jsx";
 
 function App() {
     return (
