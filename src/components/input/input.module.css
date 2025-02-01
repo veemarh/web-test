@@ -61,7 +61,7 @@
     isolation: isolate;
 
     background: #FCFCFD;
-    border: 1px solid #D5D8DD;
+    box-shadow: 0 0 0 1px #D5D8DD inset;
     border-radius: 4px;
 
     order: 0;

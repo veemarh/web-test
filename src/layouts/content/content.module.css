@@ -10,6 +10,22 @@
     padding: 0 0 16px;
 }
 
+@media (max-width: 767px) {
+    .content,
+    .subheadingAndPadding {
+        position: relative !important;
+        inset: inherit !important;
+    }
+
+    .content {
+        height: inherit !important;;
+    }
+
+    .paddingForm {
+        padding-top: 0 !important;
+    }
+}
+
 .withNavigatorVisible {
     left: 336px;
 }

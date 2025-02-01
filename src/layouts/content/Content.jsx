@@ -23,11 +23,11 @@ export default function Content({navigatorVisible}) {
             <header
                 className={`${styles.subheadingAndPadding} ${shadow ? styles.shadow : ""} ${navigatorVisible ? styles.withNavigatorVisible : styles.withNavigatorInvisible}`}>
                 <div className={`${styles.leftSide} ${isMobile && styles.mobileSide}`}>
-                    <h2 className={styles.subheadingTitle}>Подзадача</h2>
+                    <h2 className={styles.subheadingTitle}>Подзадачи</h2>
                     <DefaultButton text="Создать"/>
                 </div>
                 {!isMobile && <div className={styles.rightSide}>
-                    <DefaultButton text="Сохранить" primary={true}/>
+                    <DefaultButton text="Сохранить" option="primary"/>
                     <DefaultButton text="Сохранить и выйти"/>
                 </div>}
             </header>
