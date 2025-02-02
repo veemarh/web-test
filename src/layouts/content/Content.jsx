@@ -5,6 +5,7 @@ import {useEffect, useRef, useState} from "react";
 import {useResponsiveContext} from "../../contexts/ResponsiveContext.jsx";
 import {useModal} from "../../hooks/useModal.jsx";
 import Modal from "../../components/modal/Modal.jsx";
+import cross from "/cross.svg"
 
 export default function Content({navigatorVisible, isForm = false, onClose}) {
     const [shadow, setShadow] = useState(false);
@@ -43,10 +44,12 @@ export default function Content({navigatorVisible, isForm = false, onClose}) {
                 <div className={styles.rightSide}>
                     {(!isMobile || isForm) &&
                         <>
-                            <DefaultButton text="Сохранить" option="primary"/>
-                            {isForm
+                            {!isMobile
+                                ? <DefaultButton text="Сохранить" option="primary"/>
+                                : <DefaultButton image={cross} onClick={onClose}/>}
+                            {!isMobile && (isForm
                                 ? <DefaultButton text="Отменить" onClick={onClose}/>
-                                : <DefaultButton text="Сохранить и выйти"/>
+                                : <DefaultButton text="Сохранить и выйти"/>)
                             }
                         </>
                     }
@@ -59,6 +62,12 @@ export default function Content({navigatorVisible, isForm = false, onClose}) {
                         : "STSK0004783 На инциденте, запросе, проблеме, в статусе закрыто некоторые поля остаются редактируемыми для агента если он Caller"
                     }</h1>
                 <Form/>
+                {isMobile && isForm && (
+                    <div className={styles.mobileFormButtons}>
+                        <DefaultButton text="Сохранить" option="primary"/>
+                        <DefaultButton text="Отменить" onClick={onClose}/>
+                    </div>
+                )}
             </article>
             <Modal isOpen={isOpen} onClose={closeModal}>
                 <Content isForm={true} onClose={closeModal}/>

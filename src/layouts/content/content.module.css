@@ -136,3 +136,9 @@
     position: fixed;
     width: 100%;
 }
+
+.mobileFormButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
