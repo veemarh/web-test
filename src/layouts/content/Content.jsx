@@ -6,11 +6,13 @@ import {useResponsiveContext} from "../../contexts/ResponsiveContext.jsx";
 import {useModal} from "../../hooks/useModal.jsx";
 import Modal from "../../components/modal/Modal.jsx";
 
-export default function Content({navigatorVisible}) {
+export default function Content({navigatorVisible, isForm = false}) {
     const [shadow, setShadow] = useState(false);
     const containerRef = useRef(null);
     const {isMobile} = useResponsiveContext();
     const {isOpen, openModal, closeModal} = useModal();
+    const extraContentProps = isMobile || isForm ? {"data-mobile": true} : {};
+    const extraHeaderProps = isForm ? {"data-form-header": true} : {};
 
     const handleScroll = () => {
         if (containerRef.current.scrollTop > 0) {
@@ -21,10 +23,10 @@ export default function Content({navigatorVisible}) {
     };
 
     return (
-        <section
-            className={`${styles.content} ${navigatorVisible ? styles.withNavigatorVisible : styles.withNavigatorInvisible}`}>
-            <header
-                className={`${styles.subheadingAndPadding} ${shadow ? styles.shadow : ""} ${navigatorVisible ? styles.withNavigatorVisible : styles.withNavigatorInvisible}`}>
+        <section {...extraContentProps}
+                 className={`${styles.content} ${navigatorVisible ? styles.withNavigatorVisible : styles.withNavigatorInvisible}`}>
+            <header {...extraHeaderProps}
+                    className={`${styles.subheadingAndPadding} ${shadow ? styles.shadow : ""} ${navigatorVisible ? styles.withNavigatorVisible : styles.withNavigatorInvisible}`}>
                 <div className={`${styles.leftSide} ${isMobile && styles.mobileSide}`}>
                     <h2 className={styles.subheadingTitle}>Подзадачи</h2>
                     <DefaultButton text="Создать" onClick={openModal}/>
@@ -41,7 +43,7 @@ export default function Content({navigatorVisible}) {
                 <Form/>
             </article>
             <Modal isOpen={isOpen} onClose={closeModal}>
-                TODO
+                <Content isForm={true}/>
             </Modal>
         </section>
     )
