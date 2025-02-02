@@ -13,10 +13,10 @@ export default function PageScreen() {
     };
 
     return (
-        <>
+        <div>
             <Header/>
             {!isMobile && <Navigator navigatorVisible={isNavigatorVisible} toggleNavigator={toggleNavigator}/>}
             <Content navigatorVisible={isNavigatorVisible}/>
-        </>
+        </div>
     )
 }

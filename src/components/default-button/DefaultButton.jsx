@@ -1,8 +1,8 @@
 import styles from "./default-button.module.css";
 
-export default function DefaultButton({image, text, option = "base"}) {
+export default function DefaultButton({image, text, option = "base", onClick}) {
     return (
-        <button
+        <button onClick={onClick}
             className={`${styles.defaultButton} ${text ? styles.withText : styles.withIcon} ${styles[option]}`}>
             {image &&
                 <div className={styles.plusButton}>
